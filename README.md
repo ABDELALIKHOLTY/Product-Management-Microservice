@@ -5,7 +5,17 @@
 [![Maven](https://img.shields.io/badge/Maven-3.9.12-blue.svg)](https://maven.apache.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-Une application **Spring Boot** pour la gestion des produits. Ce microservice fournit une API RESTful complète pour créer, lire, mettre à jour et supprimer des produits.
+**Project Name:** Product Management Microservice
+
+**Technology Stack:** Spring Boot 4.0.2 + H2 Database + REST API
+
+**Architecture:** Microservice with CRUD Operations & JPA/Hibernate ORM
+
+**Core API:** RESTful endpoints for complete product lifecycle management
+
+## 1. Executive Summary
+
+This is a fully functional **Spring Boot microservice** designed for managing product inventory. The system provides a complete REST API for Create, Read, Update, and Delete (CRUD) operations on products. It leverages **H2 Database** for data persistence, **JPA/Hibernate** for object-relational mapping, and includes an interactive **H2 Console** for direct database access. The application is production-ready and can be deployed locally or in containerized environments.
 
 ---
 
@@ -25,55 +35,48 @@ Une application **Spring Boot** pour la gestion des produits. Ce microservice fo
 
 ---
 
-## 📹 Vidéo de Démonstration
+## � See It in Action
 
-Regardez cette vidéo pour comprendre les fonctionnalités principales du projet :
-
-### Vidéo complète du projet
-
-```html
-<video width="100%" controls>
-  <source src="public/video.mp4" type="video/mp4">
-  Votre navigateur ne supporte pas la balise vidéo HTML5.
-</video>
-```
-
-Ou téléchargez directement : [public/video.mp4](./public/video.mp4)
-
-**Contenu de la vidéo** :
-- ✅ Démarrage de l'application
-- ✅ Accès à la H2 Console
-- ✅ Création de produits
-- ✅ Récupération et modification des produits
-- ✅ Tests des endpoints API
-- ✅ Gestion de la base de données
-
-**Durée** : ~10 minutes
-
-> **Vidéo créée par** : Abdel
+[public/video.mp4](./public/video.mp4)
 
 ---
 
-## ✨ Fonctionnalités
+## 2. Product Architecture & Features
 
-- ✅ **Gestion des Produits** : Créer, lire, mettre à jour et supprimer des produits
-- ✅ **Base de Données H2** : Base de données embarquée pour le développement
-- ✅ **API RESTful** : Endpoints standards pour les opérations CRUD
-- ✅ **JPA/Hibernate** : ORM pour la manipulation des données
-- ✅ **H2 Console** : Interface web pour gérer la base de données
-- ✅ **Spring DevTools** : Rechargement automatique pendant le développement
+### 2.1 Core Capabilities
+
+The microservice includes the following features:
+
+- ✅ **Complete CRUD Operations** : Create, read, update, and delete products
+- ✅ **H2 Embedded Database** : Lightweight database for development and testing
+- ✅ **RESTful API Design** : Standard HTTP methods (GET, POST, PUT, DELETE)
+- ✅ **JPA/Hibernate ORM** : Automatic mapping between Java objects and database tables
+- ✅ **H2 Web Console** : Interactive database management interface
+- ✅ **Spring DevTools** : Automatic restart during development for faster iteration
+
+### 2.2 Data Model
+
+**Product Entity** - Stores product information with the following attributes:
+
+| Attribute | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| **id** | Integer | Yes (Auto-generated) | Unique product identifier |
+| **name** | String | Yes | Product name or description |
+| **price** | Integer | Yes | Product price in currency units |
 
 ---
 
-## 🔧 Prérequis
+## 3. System Requirements & Setup
 
-Avant de commencer, assurez-vous d'avoir installé :
+### 3.1 Prerequisites
 
-- **Java 17 ou supérieur** : [Télécharger Java](https://www.oracle.com/java/technologies/javase-downloads.html)
-- **Maven 3.6+** : [Télécharger Maven](https://maven.apache.org/download.cgi)
-- **Git** : [Télécharger Git](https://git-scm.com/)
+Before deploying this microservice, ensure the following are installed:
 
-### Vérifier l'installation
+- **Java 17 or Higher** : [Download Java](https://www.oracle.com/java/technologies/javase-downloads.html)
+- **Maven 3.6+** : [Download Maven](https://maven.apache.org/download.cgi)
+- **Git** : [Download Git](https://git-scm.com/)
+
+### 3.2 Verify Installation
 
 ```bash
 java -version
@@ -83,30 +86,7 @@ git --version
 
 ---
 
-## 📦 Installation
-
-### 1. Cloner le dépôt
-
-```bash
-git clone <votre-repo-url>
-cd product
-```
-
-### 2. Installer les dépendances
-
-```bash
-mvn clean install
-```
-
-### 3. Compiler le projet
-
-```bash
-mvn clean package
-```
-
----
-
-## ⚙️ Configuration
+## 4. Getting Started
 
 ### Fichier `application.properties`
 
