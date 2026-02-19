@@ -33,12 +33,12 @@ Regardez cette vidéo pour comprendre les fonctionnalités principales du projet
 
 ```html
 <video width="100%" controls>
-  <source src="video.mkv" type="video/mkv">
+  <source src="public/video.mp4" type="video/mp4">
   Votre navigateur ne supporte pas la balise vidéo HTML5.
 </video>
 ```
 
-Ou téléchargez directement : [video.mkv](./video.mkv)
+Ou téléchargez directement : [public/video.mp4](./public/video.mp4)
 
 **Contenu de la vidéo** :
 - ✅ Démarrage de l'application
@@ -184,8 +184,7 @@ GET /api/products
   {
     "id": 1,
     "name": "Produit A",
-    "price": 29.99,
-    "description": "Description du produit"
+    "price": 29.99
   }
 ]
 ```
@@ -205,8 +204,7 @@ GET /api/products/1
 {
   "id": 1,
   "name": "Produit A",
-  "price": 29.99,
-  "description": "Description du produit"
+  "price": 29.99
 }
 ```
 
@@ -220,8 +218,7 @@ Content-Type: application/json
 ```json
 {
   "name": "Nouveau Produit",
-  "price": 49.99,
-  "description": "Description du produit"
+  "price": 49.99
 }
 ```
 
@@ -230,8 +227,7 @@ Content-Type: application/json
 {
   "id": 2,
   "name": "Nouveau Produit",
-  "price": 49.99,
-  "description": "Description du produit"
+  "price": 49.99
 }
 ```
 
@@ -245,8 +241,7 @@ Content-Type: application/json
 ```json
 {
   "name": "Produit Mis à Jour",
-  "price": 59.99,
-  "description": "Nouvelle description"
+  "price": 59.99
 }
 ```
 
@@ -255,8 +250,7 @@ Content-Type: application/json
 {
   "id": 1,
   "name": "Produit Mis à Jour",
-  "price": 59.99,
-  "description": "Nouvelle description"
+  "price": 59.99
 }
 ```
 
@@ -363,7 +357,7 @@ mvn clean install -DskipTests=true
 # Créer un produit
 curl -X POST http://localhost:8080/api/products \
   -H "Content-Type: application/json" \
-  -d '{"name":"Laptop","price":999.99,"description":"High-end laptop"}'
+  -d '{"name":"Laptop","price":999.99}'
 
 # Récupérer tous les produits
 curl http://localhost:8080/api/products
@@ -374,7 +368,7 @@ curl http://localhost:8080/api/products/1
 # Mettre à jour un produit
 curl -X PUT http://localhost:8080/api/products/1 \
   -H "Content-Type: application/json" \
-  -d '{"name":"Updated Laptop","price":1099.99,"description":"Updated description"}'
+  -d '{"name":"Updated Laptop","price":1099.99}'
 
 # Supprimer un produit
 curl -X DELETE http://localhost:8080/api/products/1
