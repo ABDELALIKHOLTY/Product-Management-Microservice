@@ -11,11 +11,11 @@ Une application **Spring Boot** pour la gestion des produits. API RESTful compl�
 
 ## 📺 See It in Action
 
-Pour voir la vidéo de démonstration : **`public/video.mp4`**
+Pour voir la vidéo  : **`public/video.mp4`**
 
 - 📥 [Télécharger la vidéo](./public/video.mp4)
 - ▶️ Ouvrez avec votre lecteur vidéo préféré
-- ⏱️ Durée : ~10 minutes
+- ⏱️ Durée : ~3 minutes
 
 ---
 
@@ -54,7 +54,7 @@ java -jar target/product-0.0.1-SNAPSHOT.jar --server.port=8081
 | `GET` | `/api/products/{id}` | Récupérer un produit par ID |
 | `POST` | `/api/products` | Créer un nouveau produit |
 | `PUT` | `/api/products/{id}` | Mettre à jour un produit |
-| `DELETE` | `/api/products/{id}` | Supprimer un produit |
+
 
 ### Exemple d'utilisation
 
@@ -92,10 +92,7 @@ curl http://localhost:8080/api/products
 
 ## 👤 Auteur
 
-**Abdel** - Développement et documentation
+**Abdelali kholty** - Développement et documentation
 
 ---
 
-## 📄 Licence
-
-MIT License - Voir LICENSE pour détails
