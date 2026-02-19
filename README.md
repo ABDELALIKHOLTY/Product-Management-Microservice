@@ -5,7 +5,7 @@
 [![Maven](https://img.shields.io/badge/Maven-3.9.12-blue.svg)](https://maven.apache.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-Une application **Spring Boot** pour la gestion des produits. API RESTful complète pour créer, lire, mettre à jour et supprimer des produits.
+Une application **Spring Boot** pour la gestion des produits. API RESTful complète pour créer, lire, mettre à jour des produits.
 
 ---
 
