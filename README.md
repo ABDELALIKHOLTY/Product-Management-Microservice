@@ -11,7 +11,11 @@ Une application **Spring Boot** pour la gestion des produits. API RESTful compl�
 
 ## 📺 See It in Action
 
-<iframe src="https://drive.google.com/file/d/1sB27O8g2sVW5L-a6xSJJoVr6W5c_xmL4/preview" width="100%" height="600" allow="autoplay" allowfullscreen></iframe>
+Pour voir la vidéo de démonstration : **`public/video.mp4`**
+
+- 📥 [Télécharger la vidéo](./public/video.mp4)
+- ▶️ Ouvrez avec votre lecteur vidéo préféré
+- ⏱️ Durée : ~10 minutes
 
 ---
 
