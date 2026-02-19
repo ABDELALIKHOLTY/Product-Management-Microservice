@@ -33,12 +33,12 @@ Regardez cette vidéo pour comprendre les fonctionnalités principales du projet
 
 ```html
 <video width="100%" controls>
-  <source src="video.mp4" type="video/mp4">
+  <source src="video.mkv" type="video/mkv">
   Votre navigateur ne supporte pas la balise vidéo HTML5.
 </video>
 ```
 
-Ou téléchargez directement : [video.mp4](./video.mp4)
+Ou téléchargez directement : [video.mkv](./video.mkv)
 
 **Contenu de la vidéo** :
 - ✅ Démarrage de l'application
